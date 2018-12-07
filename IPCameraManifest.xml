@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<manifest>
+    <appName>ServerPushMJPEG</appName>
+    <appLocation>/home/aamil/New_WS/Oct_102</appLocation>
+    <appVersion>1.0</appVersion>
+    <minSDK>3.00</minSDK>
+    <targetSDK>3.00</targetSDK>
+    <maxSDK>3.00</maxSDK>
+    <debug>true</debug>
+    <vendor>Samsung Techwin</vendor>
+    <description/>
+    <platform>
+        <model>XNB6000</model>
+        <videoEncoding>
+            <codec>MJPEG</codec>
+            <resolution>1920 X 1080</resolution>
+            <frameRate>2</frameRate>
+            <compression>1</compression>
+            <bitRate>6144</bitRate>
+            <audio>false</audio>
+        </videoEncoding>
+    </platform>
+    <permissions>1. Device</permissions>
+    <appConfigData>
+        <model>model</model>
+        <portNo>8190</portNo>
+    </appConfigData>
+</manifest>

@@ -1,0 +1,33 @@
+@charset 'utf-8';
+
+/* CSS reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    /* Root font size - 10px by default */
+    font-size: 62.5%;
+}
+
+body {
+    min-width: 48rem;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+  margin: 0;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}

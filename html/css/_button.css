@@ -1,0 +1,17 @@
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  color: #4c4c4c;
+  background-color: #fff;
+  padding: 1rem 2.2rem;
+  font-size: 1.2rem;
+  border: .1rem solid #4c4c4c;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.btn--disabled {
+  color: #c5c5c5;
+  background-color: #e0e0e0;
+  border: .1rem solid #c5c5c5;
+}

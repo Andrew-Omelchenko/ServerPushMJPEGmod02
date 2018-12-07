@@ -1,0 +1,61 @@
+@charset 'utf-8';
+
+.wrapper {
+	width: calc(100% - 20rem);
+	position: relative;
+}
+
+.slider {
+	height: inherit;
+	width: inherit;
+	position: relative;
+}
+
+/* Hide radio buttons */
+.wrapper > input {
+	display: none;
+}
+
+.tabs {
+	position: absolute;
+	top: 2rem;
+	left: -10rem;
+	width: calc(100vw - 4rem);
+	min-width: 44rem;
+}
+
+.tab1,
+.tab2,
+.tab3 {
+	display: none;
+}
+
+.wrapper .controls {
+	text-align: center;
+}
+
+.wrapper label {
+	display: inline-block;
+	font-size: 3rem;
+	color: gray;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+.wrapper label:hover {
+	cursor: pointer;
+}
+
+#tab1:checked ~ .controls label:nth-of-type(1),
+#tab2:checked ~ .controls label:nth-of-type(2),
+#tab3:checked ~ .controls label:nth-of-type(3) {
+	color: orangered;
+}
+
+#tab1:checked ~ .slider > .tab1,
+#tab2:checked ~ .slider > .tab2,
+#tab3:checked ~ .slider > .tab3 {
+	display: block;
+	text-align: center;
+}
+

@@ -1,0 +1,23 @@
+.u-flex {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;  
+  align-items: center;
+}
+
+.u-flex--around {
+  justify-content: space-around;
+}
+
+.u-flex--between {
+  justify-content: space-between;
+}
+
+.u-flex--start {
+  justify-content: flex-start;
+}
+
+.u-flex--end {
+  justify-content: flex-end;
+}

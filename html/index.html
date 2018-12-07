@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" 
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  <script src="./js/jquery-1.10.0.min.js"></script>
+  <script src="/home/js/common_function.js"></script>
+  <script src="/home/js/SDKApi.js"></script>
+  <script src="/home/js/xml2json.js"></script>
+  <script src="/home/js/json2xml.js"></script>
+  <style type="text/css">
+    .unselectable {
+      /* For Opera and <= IE9, we need to add unselectable="on" attribute onto each element */
+      /* Check this site for more details: http://help.dottoro.com/lhwdpnva.php */
+      -moz-user-select: none;
+      /* These user-select properties are inheritable, used to prevent text selection */
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      /* From IE10 only */
+      user-select: none;
+      /* Not valid CSS yet, as of July 2012 */
+      -webkit-user-drag: none;
+      /* Prevents dragging of images/divs etc */
+      user-drag: none;
+    }
+    </style>
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <div class="header u-flex u-flex--between">
+    <div class="logo u-flex u-flex--start">
+      <img src="img/wisenet_logo.svg" alt="logo" class="logo__img">
+    </div>
+    <div class="wrapper">
+      <input type="radio" name="point" id="tab1" checked>
+      <input type="radio" name="point" id="tab2">
+      <input type="radio" name="point" id="tab3">
+      <div class="controls">
+          <label for="tab1"  title="Live">
+            <i class="fas fa-tv"></i>
+          </label>
+          <label for="tab2" title="Playback">
+            <i class="fas fa-play"></i>
+          </label>
+          <label for="tab3" title="Setup">
+            <i class="fas fa-cog"></i>
+          </label>
+      </div>
+      <div class="slider">
+          <div class="content tabs tab1">
+            <h2 class="heading-secondary">LIVE STREAMING VIDEO</h2>
+            <div id="div_streaming_uri" class="u-flex u-flex--around">
+              <img id="streaming_uri" src="">
+            </div>
+            <a href="" class="btn btn--disabled">Save</a>
+          </div>
+          <div class="player tabs tab2">
+            <h2 class="heading-secondary">UNDER CONSTRUCTION</h2>
+          </div>
+          <div class="preferences tabs tab3">
+            <h2 class="heading-secondary">UNDER CONSTRUCTION</h2>
+          </div>
+      </div>
+    </div>
+    <div class="info u-flex u-flex--end">
+      <span id="lbl_model" class="info__model">Model</span>
+    </div>
+  </div>
+</body>
+</html>
